@@ -7,19 +7,20 @@
 <body>
 	<header class="page-header">
 		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button"></button>
 			<ul class="main-nav__list catalog-list">
 				<li class="catalog-list__element"><a href="#">Каталог товаров</a></li>
 				<li class="catalog-list__element"><a href="#">Вязание на заказ</a></li>
 			</ul>
 			<a href="#" class="main-nav__logo">
-				<img src="" alt="Магазин игрушек «Мишка» " class="main-nav__photo">
+				<img src="" alt="Магазин игрушек «Мишка»" class="main-nav__photo">
 			</a>
 			<ul class="main-nav__list user-list">
 				<li class="user-list__element">
-					<button class="user-list__search"></button>
+					<button class="user-list__search" type="button"></button>
 				</li>
 				<li class="user-list__element">
-					<button class="user-list__backet">Корзина: пока пуста</button>
+					<button class="user-list__backet" type="button">Корзина: пока пуста</button>
 				</li>
 			</ul>
 		</nav>
@@ -29,6 +30,73 @@
 		</ul>
 		<p class="page-header__delivery">Бесплатная доставка по России</p>
 	</header>
+	<main class="page-main">
+		<h1 class="visually-hidden">Магазин игрушек «Mishka»</h1>
+		<section class="handmade">
+			<h2 class="handmade__title">Милые штуки ручной работы для дома</h1>
+			<ul class="handmade__list">
+				<li class="handmade__element handmade__element--interior">Предметы интерьера</li>
+				<li class="handmade__element handmade__element--toys">Детские игрушки</li>
+			</ul>
+		</section>
+		<section class="goods">
+			<h2 class="goods__title">Вязаные корзинки</h2>
+			<span class="goods__top">Товар недели</span>
+			<img src="" alt="Вязаные корзинки" class="goods__image">
+			<p class="goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветах и трех размерах.</p>
+			<table class="goods__info">
+				<tr>
+					<td class="goods__color">Цвет:</td>
+					<td>«Тиффани/серый»</td>
+				</tr>
+				<tr>
+					<td class="goods__diameter">Диаметр:</td>
+					<td>25 см</td>
+				</tr>
+				<tr>
+					<td class="goods__height">Высота:</td>
+					<td>15 см</td>
+				</tr>
+			</table>
+			<p class="goods__cost">Цена: 990 руб.</p>
+			<a href="form.html" class="goods__order button">Заказать</a>
+		</section>
+		<section class="about-us">
+			<h2 class="abouts-us__title">Коротко о нас:</h2>
+			<ul class="abouts-us__list">
+				<li class="abouts-us__element abouts-us__element--eco">Экологисчески чистые материалы</li>
+				<li class="abouts-us__element abouts-us__element--love">Связано вручную с любовью и умилением</li>
+				<li class="abouts-us__element abouts-us__element--style">Скандинавский стиль по российской цене</li>
+				<li class="abouts-us__element abouts-us__element--manufacturer">Поддержка отчественного производителя</li>
+				<li class="abouts-us__element abouts-us__element--like">Увеличивает лайки на фотографиях</li>
+				<li class="abouts-us__element abouts-us__element--gift">Поставляется в подарочной упаковке</li>
+			</ul>
+		</section>
+		<section class="reviews">
+			<h2 class="reviews__title">Отзывы</h2>
+			<a href="#" class="reviews__write button">Написать</a>
+			<p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочекю. В отчаянии, я накупила аксессуаров и игрушек в Микшке, и мои фотографии сразу стали более стильнымиЮ а также набирают больше лайков!</p>
+			<p class="reviews__name">Анастасия Красильникова</p>
+			<p class="reviews__inst">@missssiskras</p>
+			<button class="reviews__button reviews__button--left" type="button"></button>
+			<button class="reviews__button reviews__button--right" type="button"></button>
+		</section>
+		<section class="contacts">
+			<h2 class="contacts__title">Контакты</h2>
+			<p class="contacts__email">e-mail: ingo@mimimishkashop.ru</p>
+			<p class="contacts__adress">адрес: г.Санкт-Петербург, ул.Большая Конюшенная д.19/8, офис 101</p>
+			<a href="#" class="contacts__write button">Напишите нам</a>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<a href="#" class="page-footer__logo"><img src="" alt="Магазин игрушек «Мишка»"></a>
+		<ul class="page-footer__list">
+			<li class="page-footer__element page-footer__element--instagram"></li>
+			<li class="page-footer__element page-footer__element--facebook"></li>
+			<li class="page-footer__element page-footer__element--twitter"></li>
+		</ul>
+		<p class="page-footer__copyright">Разработано</p>
+	</footer>
 	
 </body>
 </html>

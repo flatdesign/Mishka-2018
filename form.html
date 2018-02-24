@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Магазин игрушек «Mishka»</title>
+</head>
+<body>
+	<header class="page-header">
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button"></button>
+			<ul class="main-nav__list catalog-list">
+				<li class="catalog-list__element"><a href="#">Каталог товаров</a></li>
+				<li class="catalog-list__element"><a href="#">Вязание на заказ</a></li>
+			</ul>
+			<a href="#" class="main-nav__logo">
+				<img src="" alt="Магазин игрушек «Мишка»" class="main-nav__photo">
+			</a>
+			<ul class="main-nav__list user-list">
+				<li class="user-list__element">
+					<button class="user-list__search" type="button"></button>
+				</li>
+				<li class="user-list__element">
+					<button class="user-list__backet" type="button">Корзина: пока пуста</button>
+				</li>
+			</ul>
+		</nav>
+		<ul class="page-header__list">
+			<li class="page-header__element"><a href="#">Новые поступления</a></li>
+			<li class="page-header__element"><a href="#">Распродажа</a></li>
+		</ul>
+		<p class="page-header__delivery">Бесплатная доставка по России</p>
+	</header>
+	<main class="form-page">
+		<h1 class="form-page__title">Вязание на заказ</h1>
+		<section class="worksheet">
+			<p class="worksheet__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<form action="post" class="main-form">
+				<p class="main-form__about main-form__about--type">Тип</p>
+				<label class="main-form__interior">
+					<input type="radio" name="type" value="interior">
+					Аксессуар для интерьера
+				</label>
+				<label class="main-form__toy">
+					<input type="radio" name="type" value="toy">
+					Детская игрушка
+				</label>
+				<p class="main-form__about main-form__about--color">Цвет</p>
+				<label class="main-form__white">
+					<input type="checkbox" name="white">
+					Белый
+				</label>
+				<label class="main-form__gray">
+					<input type="checkbox" name="gray">
+					Серый
+				</label>
+				<label class="main-form__tiffany">
+					<input type="checkbox" name="tiffany">
+					«Тиффани»
+				</label>
+				<label class="main-form__black">
+					<input type="checkbox" name="black">
+					Черный
+				</label>
+				<label class="main-form__pink">
+					<input type="checkbox" name="pink">
+					Розовый
+				</label>
+				<label class="main-form__orange">
+					<input type="checkbox" name="orange">
+					Оранжевый
+				</label>
+				<p class="main-form__about main-form__about--personal">ФИО</p>
+				<label class="main-form__name">
+					Имя:
+					<input type="text" name="name" placeholder="Введите ваше имя*">
+				</label>
+				<label class="main-form__surname">
+					Фамилия:
+					<input type="text" name="surname" placeholder="Укажите фамилию*">
+				</label>
+				<label class="main-form__patronymic">
+					Отчество:
+					<input type="text" name="patronymic" placeholder="Отчесвто, если желаете">
+				</label>
+				<p class="main-form__about main-form__about--call">Тел</p>
+				<label for="phone" class="visually-hidden">Телефон</label>
+				<input type="tel" class="main-form__phone" id="phone" name="phone" placeholder="+7 XXX XX XX*">
+				<p class="main-form__about main-form__about--email">E-mail</p>
+				<label for="email" class="visually-hidden">E-mail</label>
+				<input type="email" class="main-form__email" name="email" id="email" placeholder="Ваш Email*">
+				<p class="main-form__about main-form__about--wishes">Доп</p>
+				<textarea name="wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+				<button class="main-form__order button" type="submit">Отправить заказ</button>
+				<p class="main-form__necessarily">*Поля обязательны для заполнения</p>
+			</form>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<a href="#" class="page-footer__logo"><img src="" alt="Магазин игрушек «Мишка»"></a>
+		<ul class="page-footer__list">
+			<li class="page-footer__element page-footer__element--instagram"></li>
+			<li class="page-footer__element page-footer__element--facebook"></li>
+			<li class="page-footer__element page-footer__element--twitter"></li>
+		</ul>
+		<p class="page-footer__copyright">Разработано</p>
+	</footer>
+</body>
+</html>

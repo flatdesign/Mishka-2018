@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин игрушек «Mishka»</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<nav class="main-nav">
 			<button class="main-nav__toggle" type="button"></button>
 			<ul class="main-nav__list catalog-list">
-				<li class="catalog-list__element"><a href="#">Каталог товаров</a></li>
-				<li class="catalog-list__element"><a href="#">Вязание на заказ</a></li>
+				<li class="catalog-list__element"><a href="catalog.html">Каталог товаров</a></li>
+				<li class="catalog-list__element"><a href="form.html">Вязание на заказ</a></li>
 			</ul>
 			<a href="#" class="main-nav__logo">
 				<img src="" alt="Магазин игрушек «Мишка»" class="main-nav__photo">
@@ -46,15 +48,15 @@
 			<p class="goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветах и трех размерах.</p>
 			<table class="goods__info">
 				<tr>
-					<td class="goods__color">Цвет:</td>
+					<td class="goods__cell">Цвет:</td>
 					<td>«Тиффани/серый»</td>
 				</tr>
 				<tr>
-					<td class="goods__diameter">Диаметр:</td>
+					<td class="goods__cell">Диаметр:</td>
 					<td>25 см</td>
 				</tr>
 				<tr>
-					<td class="goods__height">Высота:</td>
+					<td class="goods__cell">Высота:</td>
 					<td>15 см</td>
 				</tr>
 			</table>
@@ -62,14 +64,14 @@
 			<a href="form.html" class="goods__order button">Заказать</a>
 		</section>
 		<section class="about-us">
-			<h2 class="abouts-us__title">Коротко о нас:</h2>
-			<ul class="abouts-us__list">
-				<li class="abouts-us__element abouts-us__element--eco">Экологисчески чистые материалы</li>
-				<li class="abouts-us__element abouts-us__element--love">Связано вручную с любовью и умилением</li>
-				<li class="abouts-us__element abouts-us__element--style">Скандинавский стиль по российской цене</li>
-				<li class="abouts-us__element abouts-us__element--manufacturer">Поддержка отчественного производителя</li>
-				<li class="abouts-us__element abouts-us__element--like">Увеличивает лайки на фотографиях</li>
-				<li class="abouts-us__element abouts-us__element--gift">Поставляется в подарочной упаковке</li>
+			<h2 class="about-us__title">Коротко о нас:</h2>
+			<ul class="about-us__list">
+				<li class="about-us__element about-us__element--eco">Экологисчески чистые материалы</li>
+				<li class="about-us__element about-us__element--love">Связано вручную с любовью и умилением</li>
+				<li class="about-us__element abouts-us__element--style">Скандинавский стиль по российской цене</li>
+				<li class="about-us__element about-us__element--manufacturer">Поддержка отчественного производителя</li>
+				<li class="about-us__element about-us__element--like">Увеличивает лайки на фотографиях</li>
+				<li class="about-us__element about-us__element--gift">Поставляется в подарочной упаковке</li>
 			</ul>
 		</section>
 		<section class="reviews">
@@ -83,8 +85,16 @@
 		</section>
 		<section class="contacts">
 			<h2 class="contacts__title">Контакты</h2>
-			<p class="contacts__email">e-mail: ingo@mimimishkashop.ru</p>
-			<p class="contacts__adress">адрес: г.Санкт-Петербург, ул.Большая Конюшенная д.19/8, офис 101</p>
+			<table class="contacts__table">
+				<tr>
+					<td>e-mail:</td>
+					<td>info@mimimishkashop.ru</td>
+				</tr>
+				<tr>
+					<td>адрес:</td>
+					<td>г.Санкт-Петербург, ул.Большая Конюшенная д.19/8, офис 101</td>
+				</tr>
+			</table>
 			<a href="#" class="contacts__write button">Напишите нам</a>
 		</section>
 	</main>

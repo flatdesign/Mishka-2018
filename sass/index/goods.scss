@@ -1,0 +1,20 @@
+.goods {
+	&__title {
+		@include forTitle;
+	}
+	&__top {
+		line-height: 17px;
+		color: #63d1bb;
+	}
+	&__description {
+		font-weight: 400;
+	}
+	&__info td {
+		line-height: 20px;
+		font-weight: 400;
+	}
+	&__cost {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}

@@ -1,0 +1,11 @@
+.form-page {
+	&__title {
+		@include forTitle;
+	}
+}
+
+.worksheet {
+	&__description {
+		font-weight: 400;
+	}
+}

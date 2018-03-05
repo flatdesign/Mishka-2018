@@ -1,0 +1,8 @@
+.contacts {
+	&__title {
+		@include forTitle;
+	}
+	&__table td {
+		font-weight: 400;
+	}
+}

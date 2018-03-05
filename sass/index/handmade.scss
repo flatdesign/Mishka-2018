@@ -1,0 +1,14 @@
+.handmade {
+	&__title {
+		@include forTitle;
+	}
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	&__element {
+		font-size: 20px;
+		color: #fff;
+	}
+}

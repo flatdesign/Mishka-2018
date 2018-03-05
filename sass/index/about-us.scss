@@ -1,0 +1,16 @@
+.about-us {
+	&__title{
+		@include forTitle;
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__element {
+		font-size: 20px;
+		line-height: 22px;
+		color: #000;
+		
+	}
+}

@@ -1,0 +1,15 @@
+.reviews {
+	&__title {
+		@include forTitle;
+	}
+	&__description {
+		font-weight: 400;
+	}
+	&__name {
+		line-height: 24px;
+		color: #000;
+	}
+	&__inst {
+		font-weight: 400;
+	}
+}

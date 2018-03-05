@@ -1,0 +1,32 @@
+.main-nav__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.catalog-list__element a {
+	color: #000;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.page-header{
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	&__element a {
+		color: #000;
+		text-decoration: none;
+		font-size: 15px;
+	}
+	&__delivery {
+		font-size: 15px;
+		font-weight: 400;
+		color: $text-color;
+	}
+}
+
+
+

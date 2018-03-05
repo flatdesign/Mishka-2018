@@ -1,0 +1,20 @@
+.main-form {
+	&__about {
+		line-height: 16px;
+		color: $types;
+	}
+	label {
+		font-size: 19px;
+		line-height: 18px;
+		color: #000;
+	}
+	input, textarea {
+		font-size: 19px;
+		line-height: 18px;
+		font-weight: 400;
+		font-family: 'Open Sans', sans-serif;
+	}
+	&__necessarily {
+		font-weight: 400;
+	}
+}

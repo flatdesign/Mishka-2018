@@ -1,0 +1,150 @@
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+	&__logo {
+		width: 90px;
+		flex-shrink: 0;
+		margin-left: 86px;
+		margin-right: auto;
+	}
+	&__toggle {
+		width: 20px;
+	}
+	&__delivery {
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 400;
+		color: $text-color;
+		margin: 0;
+		display: none;
+	}
+}
+
+.catalog-list {
+	width: 100%;
+	display: none;
+	a {
+		display: block;
+		padding: 30px 30px 30px 46px;
+	}
+}
+
+.user-list {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: none;
+	&__element a {
+		color: #000;
+		line-height: 24px;
+		text-decoration: none;
+		padding: 30px 30px 30px 46px;
+		display: block;
+	}
+}
+
+.sale-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: none;
+	&__element a {
+		color: #000;
+		text-decoration: none;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: $tablet) {
+	.catalog-list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 335px;
+		order: 2;
+		&__element a {
+			width: 167px;
+			font-size: 15px;
+			padding: 18px 12px 18px 0;
+		}
+	}
+	.user-list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 350px;
+		&__search {
+			width: 85px;
+		}
+		&__basket {
+			width: 265px;
+		}
+		&__search--hide {
+			display: none;
+		}
+		&__element a {
+			min-height: 90px;
+		}
+	}
+	.main-nav {
+		align-items: flex-start;
+		&__toggle {
+			display: none;
+		}
+		&__logo {
+			margin-left: 48px;
+		}
+		&__delivery {
+			order: 4;
+			display: block;
+			width: 232px;	
+			padding: 18px 0;
+			margin-left: auto;
+		}
+	}
+
+}
+
+@media (min-width: $desktop) {
+	.catalog-list {
+		order: 0;
+		width: 410px;
+		&__element a {
+			font-size: 17px;
+			width: 185px;
+			padding: 33px 0;
+		}
+		&__element:first-child {
+			margin-right: 35px;
+		}
+	}
+	.main-nav {
+		&__logo {
+			order: 1;
+			width: 150px;
+			margin-left: 50px;
+		}
+	}
+
+	.user-list {
+		order: 2;
+	}
+
+	.sale-list {
+		order: 3;
+		display: flex;
+		flex-wrap: wrap;
+		width: 410px;
+
+		&__element a {
+			width: 185px;
+			display: block;
+			font-size: 15px;
+			padding: 17px 0;
+		}
+		&__element:first-child {
+			margin-right: 35px;
+		}
+
+	}
+
+}

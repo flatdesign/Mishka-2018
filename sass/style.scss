@@ -1,6 +1,8 @@
 @import 'variables.scss';
 @import 'mixins.scss';
+@import 'main-styles.scss';
 @import 'index/page-header.scss';
+@import 'index/main-nav.scss';
 @import 'index/handmade.scss';
 @import 'index/goods.scss';
 @import 'index/about-us.scss';
@@ -12,36 +14,4 @@
 @import 'form/worksheet.scss';
 @import 'form/main-form.scss';
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
-	font-weight: 700;
-	line-height: 30px;
-	color: $text-color;
-}
 
-*, *::before, *::after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-	position: absolute;
-
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-
-	white-space: nowrap;
-
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}

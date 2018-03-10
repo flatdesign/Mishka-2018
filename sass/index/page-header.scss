@@ -1,4 +1,4 @@
-.main-nav__list {
+.catalog-list {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -10,23 +10,7 @@
 	text-decoration: none;
 }
 
-.page-header{
-	&__list {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	&__element a {
-		color: #000;
-		text-decoration: none;
-		font-size: 15px;
-	}
-	&__delivery {
-		font-size: 15px;
-		font-weight: 400;
-		color: $text-color;
-	}
-}
+
 
 
 

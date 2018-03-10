@@ -1,6 +1,11 @@
 .about-us {
+	padding-top: 30px;
+	padding-bottom: 58px;
 	&__title{
-		@include forTitle;
+		font-size: 25px;
+		line-height: 30px;
+		color: #000;
+		margin: 0;
 	}
 	&__list {
 		list-style: none;
@@ -8,9 +13,41 @@
 		padding: 0;
 	}
 	&__element {
-		font-size: 20px;
-		line-height: 22px;
+		padding-top: 53px;
+		margin-top: 30px;
+		line-height: 20px;
 		color: #000;
-		
+	}
+	&__element--eco {
+		width: 187px;
+	}
+	&__element--style {
+		width: 210px;
+	}
+	&__element--like {
+		width: 190px;
+	}
+	&__element--love {
+		width: 220px;
+	}
+	&__element--manufacturer {
+		width: 260px;
+	}
+	&__element--gift {
+		width: 210px;
+	}
+}
+
+@media (min-width: $tablet) {
+	.about-us {
+		padding-top: 55px;
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__element {
+			width: 334px;
+			margin-top: 56px;
+		}
 	}
 }

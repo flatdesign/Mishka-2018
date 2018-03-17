@@ -1,12 +1,55 @@
 .page-footer {
+	background-color: #f1f1f1;
 	&__list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		background-color: green;
+		width: 100%;
+		height: 80px;
+		border-bottom: 1px solid #e5e5e5;
 	}
 	&__copyright {
+		margin: 0;
+		padding: 31px 92px 31px 36px;
 		font-size: 19px;
 		line-height: 18px;
 		color: #000;
+	}
+	&__logo {
+		display: none;
+	}
+}
+
+@media (min-width: $tablet) {
+	.page-footer  {
+		.main-container,
+		.main-catalog-container {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 51px;
+			padding-bottom: 51px;
+		}
+		&__logo {
+		display: block;
+		width: 102px;
+		height: 34px;
+		margin-right: 158px;
+	}
+	&__list {
+		width: 150px;
+		margin-right: auto;
+	}
+	&__copyright {
+		padding: 11px 57px 11px 20px;
+	}
+	}
+}
+
+@media (min-width: $desktop) {
+	.page-footer {
+		&__logo {
+			margin-right: 335px;
+		}
 	}
 }

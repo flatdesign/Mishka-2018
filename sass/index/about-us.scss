@@ -41,6 +41,7 @@
 @media (min-width: $tablet) {
 	.about-us {
 		padding-top: 55px;
+		padding-bottom: 80px;
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
@@ -48,6 +49,64 @@
 		&__element {
 			width: 334px;
 			margin-top: 56px;
+			font-size: 20px;
+			line-height: 22px;
+			padding-top: 55px;
+		}
+		&__title {
+			font-size: 43px;
+			line-height: 50px;
+		}
+		&__element--eco {
+			padding-right: 120px;
+		}
+		&__element--style {
+			order: 3;
+			padding-right: 90px;
+		}
+		&__element--like {
+			order: 5;
+			padding-right: 115px;
+		}
+		&__element--love {
+			order: 2;
+			padding-right: 75px;
+		}
+		&__element--manufacturer {
+			order: 4;
+			padding-right: 30px;
+		}
+		&__element--gift {
+			order: 6;
+			padding-right: 90px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.about-us {
+		padding-top: 68px;
+		padding-bottom: 88px;
+		&__element {
+			width: 350px;
+		}
+		&__element--eco {
+		padding-right: 135px;
+		}
+		&__element--style {
+			padding-right: 105px;
+		}
+		&__element--like {
+			padding-right: 130px;
+		}
+		&__element--love {
+			padding-right: 90px;
+		}
+		&__element--manufacturer {
+			padding-right: 45px;
+		}
+		&__element--gift {
+			padding-right: 105px;
 		}
 	}
 }

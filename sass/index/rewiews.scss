@@ -1,16 +1,101 @@
 .reviews {
+	padding-bottom: 51px;
 	&__title {
-		@include forTitle;
 		margin: 0;
+		font-size: 25px;
+		color: #000;	
 	}
 	&__description {
+		margin: 0;
+		margin-top: 30px;
+		font-size: 15px;
 		font-weight: 400;
 	}
 	&__name {
+		margin: 0;
+		margin-top: 35px;
 		line-height: 24px;
 		color: #000;
 	}
 	&__inst {
+		margin: 0;
+		margin-top: 8px;
 		font-weight: 400;
+	}
+	&__button {
+		padding: 0;
+		margin-top: 34px;
+		border: 0;
+		display: inline-block;
+		width: 130px;
+		height: 52px;
+		background-color: transparent;
+		border: 1px solid #ececec;
+	}
+	&__write {
+		margin-top: 33px;
+	}
+}
+
+@media (min-width: $tablet) {
+	.reviews {
+		padding-top: 80px;
+		.site-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__title {
+			width: 440px;
+			display: block;
+			word-wrap: break-word;
+			order: -2;
+			font-size: 43px;
+			line-height: 50px;
+		}
+		&__description {
+			font-size: 17px;
+			margin-top: 50px;
+		}
+		&__name {
+			margin-top: 65px;
+			font-size: 18px;
+		}
+		&__inst {
+			margin-top: 10px;
+		}
+		&__write {
+			order: -1;
+			margin-top: 0;
+			width: 175px;
+			margin-left: auto;
+			word-wrap: break-word;
+			align-self: flex-start;
+		}
+		&__button {
+			margin-top: 65px;
+			width: 84px;
+			border: 0;
+		}
+		&__button--left {
+			margin-left: auto;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.reviews {
+		padding-top: 74px;
+		&__title {
+			font-size: 53px;
+			line-height: 57px;
+			width: 600px;
+		}
+		&__name {
+			margin-top: 47px;
+		}
+		&__button {
+			margin-top: 47px;
+			width: 88px;
+		}
 	}
 }

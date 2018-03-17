@@ -4,11 +4,13 @@ body {
 	font-weight: 700;
 	line-height: 30px;
 	color: $text-color;
+	margin: 0;
 }
 
 *, *::before, *::after {
 	box-sizing: inherit;
 }
+
 
 html {
 	box-sizing: border-box;
@@ -43,31 +45,45 @@ img {
 	margin: 0 auto;
 }
 
+.main-catalog-container {
+	width: $mobile;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
 .button {
 	display: block;
 	color: $text-color;
 	line-height: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 14px 20px;
+	padding: 14px 10px;
 	border: 2px solid $text-color;
 	text-align: center;
 }
 
 @media (min-width: $tablet) {
 	.main-container {
-	width: $tablet;
-	padding: 0 50px;
+		width: $tablet;
+		padding: 0 50px;
+	}
+	.main-catalog-container {
+		width: $tablet;
+		padding: 0 50px;
 	}
 }
 
 @media (min-width: $desktop) {
 	.main-container {
-	width: $desktop;
-	padding: 0 100px;
+		width: $desktop;
+		padding: 0 100px;
 	}
 	.site-wrapper {
 		width: 100%;
 		padding-left: 175px;
+	}
+	.main-catalog-container {
+		width: 1150px;
+		padding: 0 50px;
 	}
 }

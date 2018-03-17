@@ -1,26 +1,130 @@
 .catalog-page {
 	&__title {
-		@include forTitle;
+		font-size: 27px;
+		color: #000;
+		margin: 0;
+		text-align: center;
+		padding: 73px 0;
 	}
 }
 
 .products {
+	padding-top: 30px;
+	&__wrapper {
+		padding: 0 28px;
+		padding-bottom: 25px;
+		border: 1px solid #ededed;
+	}
+	&__photo {
+		width: 260px;
+		height: 195px;
+		background-color: green;
+	}
 	&__list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 	}
 	&__title {
-		font-size: 20px;
+		margin-top: 28px;
+		margin-bottom: 12px;
+		font-size: 17px;
 		line-height: 24px;
 		color: #000;
 	}
 	&__description {
-		font-size: 15px;
+		margin: 0;
+		font-size: 13px;
 		font-weight: 400;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ededed;
+
 	}
 	&__cost {
+		margin: 0;
+		margin-top: 24px;
+		font-size: 15px;
 		line-height: 24px;
 		color: #000;
+		padding-right: 40px;
+	}
+	&__element {
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: $tablet) {
+	.catalog-page {
+		&__title {
+			padding-top: 50px;
+		}
+	}
+	.products {
+		padding-top: 90px;
+		&__photo {
+			width: 334px;
+			height: 334px;
+		}
+		&__element {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			padding-left: 33px;
+			padding-right: 33px;
+			width: 334px;
+		}
+		&__title {
+			font-size: 20px;
+			margin-top: 26px;
+		}
+		&__description {
+			font-size: 15px;
+			flex-grow: 1;
+		}
+		&__cost {
+			font-size: 17px;
+		}
+		&__element {
+			margin-bottom: 54px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.catalog-page {
+		&__title {
+			font-size: 53px;
+			line-height: 57px;
+			padding-top: 37px;
+			padding-bottom: 77px;
+		}
+	}
+		.products {
+			padding-top: 145px;
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			&__element {
+				flex-direction: column;
+			}
+			&__photo {
+			width: 316px;
+			height: 462px;
+		}
+		&__element {
+			margin-right: 51px;
+		}
+		&__element:last-child {
+			margin-right: 0;
+		}
+		&__wrapper {
+			width: 316px;
+			flex-grow: 1;
+		}
+
 	}
 }

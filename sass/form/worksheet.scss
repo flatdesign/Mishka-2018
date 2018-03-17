@@ -1,11 +1,65 @@
 .form-page {
 	&__title {
-		@include forTitle;
+		margin: 0;
+		font-size: 27px;
+		color: #231f20;
+		padding-top: 70px;
+		padding-bottom: 73px;
+		text-align: center;
 	}
 }
 
 .worksheet {
 	&__description {
+		margin: 0;
+		padding-top: 24px;
+		padding-bottom: 25px;
 		font-weight: 400;
+		font-size: 13px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: $tablet)
+{
+	.form-page {
+		&__title {
+			font-size: 43px;
+			line-height: 50px;
+			color: #000;
+			padding-top: 40px;
+			padding-bottom: 75px;
+		}	
+	}
+	.worksheet {
+	&__description {
+		padding-top: 85px;
+		padding-bottom: 50px;
+		font-size: 17px;
+		line-height: 30px;
+		}
+	}
+}
+
+@media (min-width: $desktop)
+{
+	.form-page {
+	&__title {
+		font-size: 53px;
+		line-height: 57px;
+		padding-top: 43px;
+		padding-bottom: 93px;
+	}
+}
+
+.worksheet {
+	&__description {
+		padding-top: 140px;
+		padding-bottom: 57px;
+		padding-left: 175px;
+		padding-right: 175px;
+		font-size: 17px;
+		line-height: 30px;
+	}
 	}
 }

@@ -1,0 +1,198 @@
+.handmade {
+	background-color: #fafafa;
+	background-image: url("../img/hero-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	background-position: center -7px;
+	
+	@media (min-resolution: $retina-dpi),
+				 (min-resolution: $retina-ddpx) {
+				 	background-image: url("../img/hero-mobile@2x.jpg");
+				 	background-size: 575px auto;
+				 }
+	padding-top: 78px;
+	&__title {
+		font-size: 27px;
+		color: #000;
+		width: 245px;
+		line-height: 30px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 125px;	
+	}
+	&__list {
+		margin-top: 55px;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	&__element {
+		position: relative;
+		width: 100%;
+		font-size: 19px;
+		line-height: 24px;
+	}
+	&__element--interior {
+		background-color: #63d1bb;
+		.handmade__button:hover,
+		.handmade__button:focus {
+			background-color: #59d5bc;
+			.handmade__interior {
+				fill: #29a592;
+			}
+		}
+		.handmade__button:active {
+			color: rgba(255, 255, 255, 0.3);
+			.handmade__interior {
+				fill: #44c0aa;
+			}
+		}
+	}
+	&__element--toys {
+		background-color: #56c3b2;
+		.handmade__button:hover,
+		.handmade__button:focus {
+			background-color: #46c1ae;
+			.handmade__toy {
+				fill: #239f8e;
+			}
+		}
+		.handmade__button:active {
+			color: rgba(255, 255, 255, 0.3);
+			.handmade__toy {
+				fill: #44c0aa;
+			}
+		}
+	} 
+	&__button {
+		width: 100%;
+		padding: 28px 0;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		font-weight: 700;
+		font-size: 19px;
+		line-height: 24px;
+		text-align: start;
+		background-color: transparent;
+		transition: all 0.25s ease;
+	}
+	&__wrapper {
+		background-color: transparent;
+		position: relative;
+		width: 320px;
+		margin: 0 auto;
+		padding-left: 30px;
+		padding-right: 160px;
+	}
+	&__interior {
+	position: absolute;
+	width: 40px;
+	height: 62px;
+	top: -5px;
+	right: 36px;
+	fill: #3bb09d;
+	transition: all 0.17s ease;
+	}
+	&__toy {
+	position: absolute;
+	width: 60px;
+	height: 61px;
+	top: -8px;
+	right: 26px;
+	fill: #35a999;
+	transition: all 0.17s ease;
+	}
+}
+@media (min-width: $tablet) {
+	.handmade {
+		background-image: url("../img/hero-tablet@1x.jpg");
+		background-position: center -48px;
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-ddpx) {
+				 	 background-image: url("../img/hero-tablet@2x.jpg");
+				 	 background-size: 1150px auto;
+				   }
+		padding-top: 108px;
+		&__title {
+			font-size: 43px;
+			line-height: 50px;
+			width: 505px;
+			margin-bottom: 370px;
+		}
+		&__list {
+			width: 670px;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 auto;		
+		}
+		&__button {
+			font-size: 20px;
+			line-height: 30px;
+			padding: 30px 167px 28px 36px;
+		}
+		&__element {
+			width: 334px;
+		}
+		&__wrapper {
+		width: auto;
+		margin: 0;
+		padding: 0;
+		}
+		&__interior {
+			right: -131px;
+		}
+		&__toy {
+			right: -134px;
+		}
+		&__element--interior::before,
+		&__element--toys::before {
+			content: "";
+			position: absolute;
+			width: 334px;
+			height: 10px;
+			left: 0;
+			bottom: 0;
+			background-image: url("../img/icon-bg-zigzag-fill.svg");
+			background-size: auto 22px;
+			background-repeat: repeat-X;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.handmade {
+		background-image: url("../img/hero-desktop@1x.jpg");
+		background-position: center -60px;
+		padding-top: 97px;
+		&__title {
+			font-size: 53px;
+			line-height: 57px;
+			width: 620px;
+			margin-bottom: 355px;
+		}
+		&__button {
+			padding: 33px 350px 28px 36px;
+		}
+		&__element {
+			width: 524px;	
+		}
+		&__list {
+			margin-bottom: 88px;
+			width: 1050px;
+		}
+		&__interior {
+			right: -314px;
+		}
+		&__toy {
+			right: -315px;
+		}
+		&__element--interior::before,
+		&__element--toys::before {
+			width: 525px;
+			height: 14px;
+			background-size: auto 35px;
+		}
+		&__element--interior::before {
+			background-position: -8px 0;
+		}
+	}
+}

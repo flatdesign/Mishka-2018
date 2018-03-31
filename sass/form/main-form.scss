@@ -1,0 +1,474 @@
+.main-form {
+	padding-bottom: 55px;
+	label {
+		display: block;
+		font-size: 17px;
+		line-height: 18px;
+		color: #000;
+	}
+	input, textarea {
+		font-size: 17px;
+		line-height: 18px;
+		font-weight: 400;
+		font-family: 'Open Sans', sans-serif;
+		background-color: transparent;
+	}
+	&__about {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		margin-bottom: 25px;
+		line-height: 16px;
+		color: $types;
+		&::after {
+			content: "";
+			width: 50px;
+			height: 1px;
+			margin-left: 25px;
+			background-color: #62d1ba;
+			flex-grow: 1;
+
+		}
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		input[type=text],
+		input[type="tel"],
+		input[type="email"] {
+			border: none;
+			border-bottom: 2px solid #000;
+			transition: all 0.15s ease;
+		}
+		input[type=text]:hover,
+		input[type=text]:focus,
+		input[type=text]:active {
+			border-color: #62d1ba;
+		}
+		input[type=tel]:hover,
+		input[type=tel]:focus,
+		input[type=tel]:active {
+			border-color: #62d1ba;
+		}
+		input[type=email]:hover,
+		input[type=email]:focus,
+		input[type=email]:active {
+			border-color: #62d1ba;
+		}
+	}
+	&__name {
+		margin-bottom: 22px;
+	}
+	&__surname {
+		margin-bottom: 22px;
+	}
+	&__phone {
+		width: 100%;
+		padding-right: 45px;
+	}
+	&__email {
+		width: 100%;
+		padding-right: 45px;
+	}
+	&__email-icon {
+		position: absolute;
+		width: 32px;
+		height: 30px;
+		fill: #cccccc;
+		top: 9px;
+		right: 4px;
+	}
+	&__phone-icon  {
+		position: absolute;
+		width: 25px;
+		height: 24px;
+		fill: #cccccc;
+		top: 9px;
+		right: 4px;
+	}
+	&__textarea {
+		padding: 15px;
+		color: rgba(68, 68, 68, 0.3);
+		border: 2px solid $text-color;
+		transition: all 0.15s ease;
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: #62d1ba;
+		}
+	}
+	&__content {
+		width: $mobile;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 30px;
+		padding-bottom: 34px;
+	}
+	&__element {
+		width: 100vw;
+	}
+	
+	&__element:last-child {
+		padding-bottom: 0;
+	}
+	&__necessarily {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		margin-top: 14px;
+		margin-bottom: 33px;
+	}
+	&__wrapper--type {
+		label {
+			position: relative;
+			padding-left: 63px;
+			margin-bottom: 13px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			cursor: pointer;
+
+			.radio-indicator {
+				position: absolute;
+				top: 2px;
+				left: 0;
+				width: 38px;
+				height: 38px;
+				border: 2px solid $text-color;
+				border-radius: 50%;
+				transition: all 0.15s ease;
+			}
+			.radio-indicator::after {
+				display: none;
+				content: "";
+				position: absolute;
+				top: 9px;
+				left: 9px;
+				border: 8px solid #62d1ba;
+				border-radius: 50%;
+			}
+			input[type="radio"]:checked + .radio-indicator::after {
+				display: block;
+			}
+		}
+		label:hover,
+		label:focus {
+			.radio-indicator {
+				border-color: #62d1ba;
+			}
+		}
+		label:active {
+			.radio-indicator {
+				border-color: #c7c7c7;
+			}
+		}
+		label:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__wrapper--color {
+		label {
+			position: relative;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			padding-left: 64px;
+			margin-bottom: 22px;
+			cursor: pointer;
+			.checkbox-indicator {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				border: 2px solid $text-color;
+				top: 0;
+				left: 0;
+				transition: all 0.15s ease;
+				&::after {
+					display: none;
+					content: "";
+					position: absolute;
+					top: 18px;
+					left: 10px;
+					width: 22px;
+					height: 2px;
+					transform: rotate(-45deg);
+					background-color: #000;
+				}
+				&::before {
+					display: none;
+					content: "";
+					position: absolute;
+					top: 22px;
+					left: 5px;
+					width: 10px;
+					height: 2px;
+					transform: rotate(45deg);
+					background-color: #000;
+				}
+			}
+			input[type="checkbox"]:checked + .checkbox-indicator::after,
+			input[type="checkbox"]:checked + .checkbox-indicator::before {
+				display: block;
+			}
+		}
+		label:hover,
+		label:focus {
+			.checkbox-indicator {
+				border-color: #62d1ba;
+			}
+		}
+		label:active {
+			.checkbox-indicator {
+				border-color: #c7c7c7;
+			}
+		}
+	}
+	&__wrapper--personal {
+		input {
+			width: 100%;
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+		label p {
+			margin: 0;
+		}
+	}
+	&__about--call {
+		margin-bottom: 9px;
+	}
+	&__wrapper--call {
+		position: relative;
+		input {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+	}
+	&__about--email {
+		margin-top: 34px;
+		margin-bottom: 9px;
+	}
+	&__wrapper--email {
+		position: relative;
+		input {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+	}
+	&__about--wishes {
+		margin-bottom: 23px;
+	}
+	&__wrapper--wishes {
+		textarea {
+			width: 100%;
+		}
+	}
+	&__footer {
+		padding: 0 30px;
+	}
+	&__order {
+		background-color: transparent;
+		font-weight: 700;
+		font-size: 17px;
+		width: 100%;
+		cursor: pointer;
+	}
+}
+
+@media (min-width: $tablet) {
+	.main-form {
+		padding-bottom: 50px;
+		input, textarea {
+			font-size: 19px;
+		}
+		&__content {
+			width: $tablet;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-bottom: 50px;
+			padding-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__element:last-child {
+			padding-bottom: 50px;
+		}
+		&__element--color {
+		background-color: #f1f1f1;
+		}
+		&__about {
+			width: 167px;
+			align-items: flex-start;
+			&::after {
+				display: none;
+			}
+		}
+		&__about--color {
+			width: 167px;
+		}
+		&__about--personal {
+			padding-top: 22px;
+		}
+		&__about--type {
+			padding-top: 17px;
+		}
+		&__about--wishes {
+			padding-top: 17px;
+		}
+		label {
+			font-size: 19px;
+		}
+		&__wrapper {
+			width: 500px;
+		}
+		&__wrapper--type {
+			label {
+				padding-left: 80px;
+				margin-bottom: 24px;
+				padding-top: 17px;
+				padding-bottom: 17px;	
+				.radio-indicator {
+					width: 52px;
+					height: 52px;
+					&::after {
+						border: 10px solid #62d1ba;
+						top: 14px;
+						left: 14px;
+					}
+				}
+			}
+			label:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__about {
+			margin-bottom: 0;
+		}
+		&__wrapper--color {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			label {
+				width: 240px;
+				padding-left: 82px;
+				padding-top: 17px;
+				padding-bottom: 17px;
+				.checkbox-indicator {
+					width: 54px;
+					height: 52px;
+					&::after {
+						width: 32px;
+						top: 22px;
+						left: 17px;
+					}
+					&::before {
+						width: 17px;
+						top: 27px;
+						left: 8px;
+					}
+				}
+			}
+		}
+		&__wrapper--personal  {
+			label {
+				display: flex;
+				margin-bottom: 12px;
+			}
+			label:last-child {
+				margin-bottom: 0;
+			}
+			p {
+				padding-right: 25px;
+				padding-top: 22px;
+			}
+		}
+		&__wrapper--call {
+			flex-grow: 1;
+			margin-bottom: 12px;
+		}
+		&__about--call {
+			padding-top: 22px;
+			margin-bottom: 12px;
+		}
+		&__phone {
+			width: 100%;
+		}
+		&__wrapper--email {
+			flex-grow: 1;
+		}
+		&__email {
+			width: 100%;
+		}
+		&__about--email {
+			margin: 0;
+			padding-top: 22px;
+		}
+		&__footer {
+			width: $tablet;
+			margin: 0 auto;
+			padding: 0 50px;
+			display: flex;
+		}
+		&__necessarily {
+			order: 2;
+			font-size: 17px;
+			line-height: 30px;
+			margin-left: auto;
+			
+		}
+		&__order {
+			width: 230px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.main-form {
+		&__content {
+			width: 1150px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 110px;
+		}
+		&__element--color {
+			background-color: #f1f1f1;
+		}
+		&__email-icon {
+		top: 12px;
+		right: 189px;
+		}
+		&__phone-icon  {
+			top: 12px;
+			right: 194px;
+		}
+		&__about {
+			width: 115px;
+		}
+		&__wrapper {
+			width: 875px;
+			padding-right: 175px;
+		}
+		&__wrapper--color {
+			padding-right: 0;
+			justify-content: flex-start;
+			label {
+				margin-right: 23px;
+			}
+		}
+		&__wrapper--personal {
+			label {
+				margin-bottom: 15px;
+			}
+		}
+		&__content--small {
+			padding-top: 40px;
+		}
+		&__wrapper--call {
+			margin-bottom: 15px;
+		}
+		&__footer {
+			width: 1150px;
+			padding: 0 225px;
+		}
+	}
+}

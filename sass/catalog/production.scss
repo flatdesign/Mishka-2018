@@ -1,0 +1,141 @@
+.production {
+	padding-bottom: 58px;
+	&__title {
+		margin: 0;
+		margin-top: 23px;
+		margin-bottom: 33px;
+		font-size: 17px;
+		line-height: 24px;
+		color: #000;
+		background-image: url("../img/icon-video.svg");
+		background-repeat: no-repeat;
+		background-position: 6px 5px;
+	}
+	&__description {
+		margin-top: 15px;
+		margin-bottom: 25px;
+		font-size: 13px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 32px;
+		border: 1px solid #ececec;
+		transition: all 0.15s ease;
+	}
+	&__list:hover,
+	&__list:focus {
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+	}
+	&__list:active {
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+	}
+	&__video {
+		position: relative;
+		width: 260px;
+		margin-left: -1px;
+		height: 150px;
+		background-color: #e3e3e3;
+	}
+	&__icon-video {
+		position: absolute;
+		width: 102px;
+		height: 78px;
+		top: calc(50% - 39px);
+		left: calc(50% - 51px);
+		cursor: pointer;
+		transition: all 0.12s ease;
+	}
+
+	&__icon-video:hover {
+		transform: scale(1.2, 1.2);
+	}
+	&__icon-video:active {
+		opacity: 0.8;
+		transform: scale(0.8, 0.8);
+	}
+	&__element {
+		padding: 0 33px;
+	}
+	&__element--video {
+		padding: 0;
+	}
+	&__title {
+		padding-left: 57px;
+	}
+}
+
+@media (min-width: $tablet) {
+	.production {
+		&__list {
+			padding-bottom: 45px;
+			display: flex;
+			flex-direction: column;
+		}
+		&__element--video {
+			order: -1;
+		}
+		&__video {
+			width: 668px;
+			height: 455px;
+		}
+		&__element {
+		padding: 0 41px;
+		}
+		&__element--video {
+			padding: 0;
+		}
+		&__title {
+		padding-left: 65px;
+		font-size: 20px;
+		line-height: 24px;
+		margin-top: 35px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-bottom: 0;
+		background-position: 0px 0px;
+		}
+		&__description {
+			margin-top: 27px;
+			margin-bottom: 32px;
+			font-size: 15px;
+			line-height: 30px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.production {
+		&__video {
+			margin-top: -1px;
+			width: 682px;
+			height: 455px;
+		}
+		&__list {
+			height: 455px;
+			flex-wrap: wrap;
+		}
+		&__element {
+			width: 366px;
+			padding-left: 80px;
+			padding-right: 56px;
+		}
+		&__element--video {
+			padding: 0;
+			width: 682px;
+		}
+		&__title {
+			padding-left: 0;
+			padding-top: 52px;
+			margin-top: 46px;
+		}
+		&__description {
+			margin-top: 34px;
+			margin-bottom: 43px;
+		}
+	}
+}
+

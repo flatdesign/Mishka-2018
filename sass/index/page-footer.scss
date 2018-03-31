@@ -1,0 +1,169 @@
+.page-footer {
+	background-color: #f1f1f1;
+	padding-bottom: 23px;
+	&__list {
+		position: relative;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 160px;
+		margin: 0 auto;
+		padding-top: 24px;
+		padding-bottom: 22px;
+	}
+	&__list::before {
+		position: absolute;
+		content: "";
+		width: 260px;
+		height: 1px;
+		background-color: #e5e5e5;
+		bottom: 0;
+		left: -50px;
+	}
+	&__element svg {
+		display: inline-block;
+		transition: all 0.12s ease;
+	}
+	&__link {
+		display: block;
+	}
+	&__element--instagram svg {
+		width: 22px;
+		height: 21px;
+	}
+	&__element--facebook svg {
+		width: 15px;
+		height: 29px;
+	}
+	&__element--twitter svg {
+		width: 24px;
+		height: 20px;
+	}
+	&__element {
+		width: 35px;
+		height: 35px;
+		text-align: center;
+	}
+	&__element--instagram {
+		.page-footer__link{
+			padding-top: 6px;
+		}	
+	}
+	&__element--twitter .page-footer__link {
+		padding-top: 6px;
+	}
+	&__element--instagram:hover,
+	&__element--instagram:focus,
+	&__element--facebook:hover,
+	&__element--facebook:focus,
+	&__element--twitter:hover,
+	&__element--twitter:focus  {
+		.page-footer__link-icon {
+			opacity: 0.6;
+		}
+	}
+	&__element--instagram:active,
+	&__element--facebook:active,
+	&__element--twitter:active {
+		.page-footer__link-icon {
+			opacity: 0.3;
+		}
+	}
+	&__copyright {
+		display: flex;
+		width: 185px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-decoration: none;
+		margin: 0;
+		margin-top: 22px;
+		margin-left: 36px;
+		font-size: 19px;
+		line-height: 18px;
+		color: #000;
+	}
+	&__copyright:hover,
+	&__copyright:focus {
+		.page-footer__copyright-icon {
+			fill: #46c1ae;
+		}
+	}
+	&__copyright:active {
+		color: #bfbfbf;
+		.page-footer__copyright-icon {
+			fill: #bde3dd;
+		}
+	}
+	&__logo-description {
+		margin: 0;
+		margin-top: 7px;
+	}
+	&__copyright-icon {
+		width: 27px;
+		height: 34px;
+		fill: #63d1bb;
+		transition: all 0.12s ease;
+	}
+	&__logo {
+		display: none;
+	}
+}
+
+@media (min-width: $tablet) {
+	.page-footer  {
+		padding-bottom: 0;
+		.main-container,
+		.main-catalog-container {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 51px;
+			padding-bottom: 51px;
+			}
+		&__logo {
+			display: block;
+			width: 102px;
+			height: 34px;
+			margin-right: 150px;
+		}
+		&__logo:hover,
+		&__logo:focus {
+			.page-footer__logo-icon {
+				opacity: 0.6;
+			}
+		}
+		&__logo:active {
+			.page-footer__logo-icon {
+				opacity: 0.3;
+			}
+		}
+		&__logo-icon {
+			width: 102px;
+			height: 34px;
+			transition: all 0.12s ease;
+		}
+		&__list {
+			margin: 0;
+			padding: 0;
+			margin-right: auto;
+		}
+		&__list::before {
+			display: none;
+		}
+		&__copyright {
+			margin-left: 0;
+			margin-top: 2px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.page-footer {
+		&__logo {
+			margin-right: 335px;
+			
+		}
+	}
+}

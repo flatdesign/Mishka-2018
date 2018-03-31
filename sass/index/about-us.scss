@@ -1,0 +1,158 @@
+.about-us {
+	padding-top: 30px;
+	padding-bottom: 58px;
+	&__title{
+		font-size: 25px;
+		line-height: 30px;
+		color: #000;
+		margin: 0;
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__element {
+		position: relative;
+		padding-top: 55px;
+		margin-top: 30px;
+		line-height: 20px;
+		color: #000;
+		svg {
+			position: absolute;
+		}
+	}
+	&__element--eco {
+		width: 187px;
+	}
+	&__element--style {
+		width: 210px;
+	}
+	&__element--like {
+		width: 190px;
+	}
+	&__element--love {
+		width: 220px;
+	}
+	&__element--manufacturer {
+		width: 260px;
+	}
+	&__element--gift {
+		width: 210px;
+	}
+	&__flower {
+		width: 33px;
+		height: 38px;
+		top: 7px;
+		left: 7px;
+	}
+	&__money {
+		width: 47px;
+		height: 27px;
+		left: 0;
+		top: 0;
+	}
+	&__heart {
+		width: 34px;
+		height: 27px;
+		left: 7px;
+		top: 7px;
+	}
+	&__ball {
+		width: 35px;
+		height: 34px;
+		left: 4px;
+		top: 4px;
+	}
+	&__rocket {
+		width: 55px;
+		height: 23px;
+		left: -6px;
+		top: 4px;
+	}
+	&__gift {
+		width: 33px;
+		height: 32px;
+		left: 4px;
+		top: 3px;
+	}
+}
+
+@media (min-width: $tablet) {
+	.about-us {
+		padding-top: 55px;
+		padding-bottom: 80px;
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__money {
+		left: 1px;
+	}
+		&__element {
+			width: 334px;
+			margin-top: 56px;
+			font-size: 20px;
+			line-height: 22px;
+			padding-top: 55px;
+		}
+		&__title {
+			font-size: 43px;
+			line-height: 50px;
+		}
+		&__flower {
+		left: 8px;
+	}
+		&__element--eco {
+			padding-right: 120px;
+		}
+		&__element--style {
+			order: 3;
+			padding-right: 90px;
+		}
+		&__element--like {
+			order: 5;
+			padding-right: 115px;
+		}
+		&__element--love {
+			order: 2;
+			padding-right: 75px;
+		}
+		&__element--manufacturer {
+			order: 4;
+			padding-right: 30px;
+		}
+		&__element--gift {
+			order: 6;
+			padding-right: 90px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.about-us {
+		padding-top: 68px;
+		padding-bottom: 88px;
+		&__element {
+			width: 350px;
+		}
+		&__element--eco {
+		padding-right: 135px;
+		}
+		&__element--style {
+			padding-right: 105px;
+		}
+		&__element--like {
+			padding-right: 130px;
+		}
+		&__element--love {
+			padding-right: 90px;
+		}
+		&__element--manufacturer {
+			padding-right: 45px;
+		}
+		&__element--gift {
+			padding-right: 105px;
+		}
+	}
+}

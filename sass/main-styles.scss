@@ -1,0 +1,116 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 30px;
+	color: $text-color;
+	margin: 0;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+
+html {
+	box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main-container {
+	width: $mobile;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.main-catalog-container {
+	width: $mobile;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.button {
+	display: block;
+	color: $text-color;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 14px 10px;
+	border: 2px solid $text-color;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+	color: #fff;
+	background-color: $text-color;
+}
+
+.button:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: $tablet) {
+	.main-container {
+		width: $tablet;
+		padding: 0 50px;
+	}
+	.main-catalog-container {
+		width: $tablet;
+		padding: 0 50px;
+	}
+}
+
+@media (min-width: $desktop) {
+	.main-container {
+		width: $desktop;
+		padding: 0 100px;
+	}
+	.site-wrapper {
+		width: 100%;
+		padding-left: 175px;
+	}
+	.main-catalog-container {
+		width: 1150px;
+		padding: 0 50px;
+	}
+}
